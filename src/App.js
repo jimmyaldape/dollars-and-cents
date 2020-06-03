@@ -1,10 +1,9 @@
 import React from 'react';
 import { Header } from './components/Header'
-import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className="w-1/3">
       <Header />
     </div>
   );
