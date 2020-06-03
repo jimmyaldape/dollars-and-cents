@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export const AddTransaction = () => {
+    const [text, setText] = useState('');
+    const [amount, setAmount] = useState(0);
+
     return (
         <div className="mt-6">
             <h4 className="text-sm border-b border-gray-500 mb-4 pb-1">Add new transaction</h4>
@@ -9,7 +12,7 @@ export const AddTransaction = () => {
                     <label className="block text-gray-700 text-sm font-bold mb-2">
                         Text
                     </label>
-                    <input className="appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight" type="text" placeholder="Enter text ..." />
+                    <input className="appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight" type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="Enter text ..." />
                 </div>
 
                 <div className="mb-4">
@@ -17,7 +20,7 @@ export const AddTransaction = () => {
                         Amount
                     </label>
                     <p className="text-xs text-gray-600 mb-2">(negative = expense, positive = income)</p>
-                    <input className="appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight" type="text" placeholder="Enter amount ..." />
+                    <input className="appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight" type="text" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Enter amount ..." />
 
                 </div>
 
