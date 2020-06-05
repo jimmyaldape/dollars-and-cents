@@ -5,14 +5,14 @@ export const AddTransaction = () => {
     const [amount, setAmount] = useState(0);
 
     return (
-        <div className="mt-6">
+        <div className="mx-8 mt-6">
             <h4 className="text-sm border-b border-gray-500 mb-4 pb-1">Add new transaction</h4>
             <form>
                 <div className="mb-4">
                     <label className="block text-gray-700 text-sm font-bold mb-2">
-                        Text
+                        Transaction Name
                     </label>
-                    <input className="appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight" type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="Enter text ..." />
+                    <input className="appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight" type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="Enter a descriptive label ..." />
                 </div>
 
                 <div className="mb-4">

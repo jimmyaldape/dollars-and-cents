@@ -9,7 +9,7 @@ import { GlobalProvider } from './context/GlobalState';
 function App() {
   return (
     <GlobalProvider>
-      <div className="mx-12 my-auto w-full sm:m-auto sm:w-2/3 md:m-auto md:w-1/2 lg:w-1/3">
+      <div className="my-auto w-full  sm:w-2/3 md:w-1/2 lg:w-1/3">
         <Header />
         <div className="container">
           <Balance />
