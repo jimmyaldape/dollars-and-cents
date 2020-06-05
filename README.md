@@ -1,4 +1,4 @@
-# Dollars-and-Cents
+# Dollars and Cents - React
 A react based expense tracker with optional location tracking and styled with [tailwindcss](https://tailwindcss.com/)
 
 ## Available Scripts
